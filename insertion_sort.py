@@ -1,4 +1,4 @@
-def insertion_sort(A):   #right，n2
+def insertion_sort(A):   #right，O(n)=n**2
     for j in range(1,len(A)):
         key = A[j]
         i = j-1
@@ -12,7 +12,5 @@ for i in range(len(A)):
     min_idx = i 
     for j in range(i+1, len(A)): 
         if A[min_idx] > A[j]: 
-            min_idx = j 
-                
+            min_idx = j             
     A[i], A[min_idx] = A[min_idx], A[i] 
-
